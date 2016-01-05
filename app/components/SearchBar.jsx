@@ -1,6 +1,6 @@
 import React from 'react';
 
-var SearchTool = React.createClass({
+var SearchBar = React.createClass({
 	handleSearch: function(event) {
 		event.preventDefault();
 		var keyword = this.refs.searchInput.value;
@@ -11,7 +11,7 @@ var SearchTool = React.createClass({
 			<div>
 				<form onSubmit={this.handleSearch}>
 					<span>
-						<input ref='searchInput' type='text' />
+						<input type='text' ref='searchInput' />
 						<input type='submit' value='Search'/>
 					</span>
 				</form>
@@ -19,4 +19,4 @@ var SearchTool = React.createClass({
 	}
 });
 
-module.exports = SearchTool;
+module.exports = SearchBar;
